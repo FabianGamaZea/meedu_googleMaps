@@ -1,9 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.meedu_googlemaps">
+<uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="meedu_googlemaps"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyAaAlgZK3IYtqPCunILeQtkoMd1o90JYFQ"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
